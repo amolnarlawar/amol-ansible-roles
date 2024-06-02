@@ -8,5 +8,5 @@
     - install-httpd
     - install-telnet
     - install-wget
-    - installnginx
+    - install-nginx
 
