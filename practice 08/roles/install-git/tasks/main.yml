@@ -1,4 +1,5 @@
-- name: install git
-  ansible.builtin.package:
+- name: Install Git
+  apt:
     name: git
     state: present
+    update_cache: yes
