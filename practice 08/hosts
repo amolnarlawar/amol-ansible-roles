@@ -1,4 +1,11 @@
- 172.31.10.77 managed-node-01.example.com managed-node-01
- 
- 172.31.12.63 managed-node-01.example.com managed-node-02
-
+all:
+  hosts:
+    managed-node-01.example.com:
+      ansible_user: ubuntu
+    managed-node-02.example.com:
+      ansible_user: ubuntu
+  children:
+    centos_servers:
+      hosts:
+        managed-node-01.example.com:
+        managed-node-02.example.com:
