@@ -1,6 +1,6 @@
 ---
 - name: install required software
-  hosts: centos_servers
+  hosts: all
   gather_facts: no
   become: yes
   roles:
