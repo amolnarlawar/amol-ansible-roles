@@ -1,4 +1,5 @@
-- name: install telnet
-  ansible.builtin.package:
+- name: Install telnet
+  apt:
     name: telnet
     state: present
+    update_cache: yes

@@ -1,4 +1,5 @@
 - name: install wget
-  ansible.builtin.package:
+  apt:
     name: wget
     state: present
+

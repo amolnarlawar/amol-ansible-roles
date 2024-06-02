@@ -1,4 +1,5 @@
-- name: install httpd
-  ansible.builtin.package:
+- name: Install httpd
+  apt:
     name: httpd
     state: present
+    update_cache: yes
