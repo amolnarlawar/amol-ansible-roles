@@ -1,5 +1,5 @@
-- name: Install httpd
+- name: Install Apache HTTP Server
   apt:
-    name: httpd
+    name: apache2
     state: present
     update_cache: yes
